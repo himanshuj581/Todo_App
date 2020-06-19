@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".ProfileFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@color/colorPrimaryDark">
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:background="@drawable/user"
+            app:cardCornerRadius="75dp"
+            android:layout_centerInParent="true">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:src="@drawable/user"
+                android:id="@+id/profileImage"/>
+        </androidx.cardview.widget.CardView>
+
+        <ImageView
+            android:id="@+id/profilemenu"
+            android:layout_width="40dp"
+            android:layout_height="50dp"
+            android:src="@drawable/profile_menu"
+            android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="15dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/chewy"
+                    android:textColor="@color/fontColor"
+                    android:text="First Name"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:id="@+id/firstnameProfile"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text=""
+                    android:fontFamily="@font/chewy"
+                    android:textColor="@color/fontColor"
+                    android:focusable="false"
+                    android:textSize="20dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="15dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/chewy"
+                    android:textColor="@color/fontColor"
+                    android:text="Second Name"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:id="@+id/secondnameProfile"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text=""
+                    android:fontFamily="@font/chewy"
+                    android:textColor="@color/fontColor"
+                    android:focusable="false"
+                    android:textSize="20dp" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="15dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="User Name"
+                    android:fontFamily="@font/chewy"
+                    android:textColor="@color/fontColor"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:id="@+id/usernameProfile"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/chewy"
+                    android:textColor="@color/fontColor"
+                    android:focusable="false"
+                    android:text=""
+                    android:textSize="20dp" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="15dp"
+                android:fontFamily="@font/chewy"
+                android:textColor="@color/fontColor"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Contact No."
+                    android:fontFamily="@font/chewy"
+                    android:textColor="@color/fontColor"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:id="@+id/phoneProfile"
+                    android:layout_width="0dp"
+                    android:focusable="false"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:inputType="numberDecimal"
+                    android:text=""
+                    android:fontFamily="@font/chewy"
+                    android:textColor="@color/fontColor"
+                    android:textSize="20dp" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="15dp"
+                android:fontFamily="@font/chewy"
+                android:textColor="@color/fontColor"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Email Id"
+                    android:fontFamily="@font/chewy"
+                    android:textColor="@color/fontColor"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:id="@+id/emailProfile"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:focusable="false"
+                    android:fontFamily="@font/chewy"
+                    android:textColor="@color/fontColor"
+                    android:text=""
+                    android:textSize="20dp" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="15dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Country"
+                    android:fontFamily="@font/chewy"
+                    android:textColor="@color/fontColor"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:id="@+id/countryProfile"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/chewy"
+                    android:textColor="@color/fontColor"
+                    android:text=""
+                    android:textSize="20dp" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    <ProgressBar
+        android:id="@+id/progressbarupdateFragment"
+        android:visibility="gone"
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

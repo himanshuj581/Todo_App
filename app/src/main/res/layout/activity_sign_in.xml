@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignInActivity">
+
+    <LinearLayout
+        android:layout_centerInParent="true"
+        android:layout_width="match_parent"
+        android:layout_margin="30dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/icon"            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="wrap_content"
+            android:text="To Do App"
+            android:textSize="27dp"
+            android:fontFamily="@font/chewy" />
+    <EditText
+        android:id="@+id/emailSigninEditText"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/border"
+        android:ems="10"
+        android:textColor="@android:color/darker_gray"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/chewy"
+        android:hint="Email Id"
+        android:inputType="textEmailAddress"
+        android:paddingLeft="13dp" />
+
+
+    <EditText
+        android:id="@+id/passwordSigninEditText"
+        android:layout_width="match_parent"
+        android:layout_height="47dp"
+        android:layout_marginBottom="40dp"
+        android:background="@drawable/border"
+        android:ems="10"
+        android:textColor="@android:color/darker_gray"
+        android:fontFamily="@font/chewy"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:paddingLeft="13dp" />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="20dp">
+
+            <Button
+                android:id="@+id/signinButton"
+                android:layout_width="match_parent"
+                android:layout_height="62dp"
+                android:background="@color/colorPrimaryDark"
+                android:fontFamily="sans-serif-medium"
+                android:text="Sign In"
+                android:textColor="@android:color/background_light"
+                android:textSize="20sp" />
+        </androidx.cardview.widget.CardView>
+
+
+
+    <TextView
+        android:id="@+id/signinTextView"
+        android:layout_width="match_parent"
+        android:gravity="end"
+        android:fontFamily="@font/sniglet"
+        android:layout_height="30dp"
+        android:layout_marginTop="10dp"
+        android:text="New User, Sign Up"
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="22sp" />
+    </LinearLayout>
+    <ProgressBar
+        android:id="@+id/progressbarSignin"
+        android:visibility="gone"
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</RelativeLayout>

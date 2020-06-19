@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/b1"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="7">
+
+        <LinearLayout
+            android:id="@+id/mainContent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="vertical">
+        <ImageView
+            android:id="@+id/logoSplashScreen"
+            android:layout_width="130dp"
+            android:layout_gravity="center"
+            android:layout_height="130dp"
+            android:layout_centerInParent="true"
+            android:src="@drawable/icon" />
+        <TextView
+            android:id="@+id/name1SplashScreen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="To Do App"
+            android:textSize="27dp"
+            android:fontFamily="@font/chewy"
+            android:layout_centerInParent="true"/>
+        <TextView
+            android:id="@+id/name2SplashScreen"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"
+            android:text="Pep up your Productivity!!"
+            android:fontFamily="@font/chewy"
+            android:textSize="23dp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+        <LinearLayout
+            android:id="@+id/bottomContent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="top"
+            android:layout_centerHorizontal="true">
+        <TextView
+            android:id="@+id/name3SplashScreen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" A Product By"
+            android:textStyle="bold"
+            android:textSize="18dp"/>
+        <TextView
+            android:id="@+id/name4SplashScreen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Himanshu Jain"
+            android:textStyle="bold"
+            android:textSize="18dp"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>
